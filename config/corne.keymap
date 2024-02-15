@@ -7,6 +7,7 @@
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
+#define BLUE    4
 
 #define HYP LS(LC(LA(LGUI)))
 
@@ -44,7 +45,7 @@
                 &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp GRAVE
                 &kp HYP &hm LCTRL A &hm LALT S &hm LGUI D &hm LSHIFT F &kp G &kp H &hm RSHIFT J &hm RGUI K &hm RALT L &hm RCTRL SEMI &kp SQT
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp ESC
-                &kp MINUS &hl RAISE LBRC &hl LOWER BSPC &hl LOWER SPACE &hl RAISE RBRC &kp EQUAL
+                &hl BLUE MINUS &hl RAISE LBRC &hl LOWER BSPC &hl LOWER SPACE &hl RAISE RBRC &hl BLUE EQUAL
             >;
         };
         
@@ -60,9 +61,18 @@
         raise_layer {
             bindings = <
                 &kp  TAB &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp NUBS
-                &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR_ALL &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE
-                &kp LSHFT &trans &trans &trans &trans &trans &kp UNDER &kp PLUS &kp LBRC &kp RBRC &kp PIPE &kp TILDE
-                &kp LGUI &trans &kp SPACE &kp RET &trans &kp RALT
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans
+            >;
+        };
+
+        bt_layer {
+            bindings = <
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR_ALL &trans &trans &trans &trans &trans &trans   
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans
             >;
         };
     };

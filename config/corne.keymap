@@ -7,7 +7,7 @@
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
-#define BLUE    4
+#define BLUE    3
 
 #define HYP LS(LC(LA(LGUI)))
 
